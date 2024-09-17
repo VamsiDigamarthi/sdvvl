@@ -1,11 +1,102 @@
-{% extends "base.html" %}
-{% load static %}
-{% block style_link %}
-<link rel="stylesheet" href={% static 'main_content/index.css' %} /> 
-{% endblock %}
+{% extends "base.html" %} {% load static %} {% block style_link %} <link
+rel="stylesheet" href={% static 'main_content/index.css' %} /> {% endblock %}
 
 {% block main %}
-<h1>hellow wordl</h1>
-<h3>git adde</h3>
+<header>
+  <div>
+    <img
+      src="https://s3-alpha-sig.figma.com/img/340a/ae55/871b9525b1001b98c826ceb4a1e66f8b?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ShIEamhfbo7WFZETLSyVSRZHBrVNnKdtUS0nSHEwSR9Eg~FrNpFcgsJyG~Y64aBcSlYoM6LpOtJ6sXgKBMPnnmg7N4gmfZQz5R0NC1Jh2oRk~ax8TEN6j2yJSCi2~ta4ux2c1mLr3lOFQD~a86Zwcv8J1Tefn~Vp~KTAEONWQdppB04cGsJ1bmAPb5Am-tepO8fK2BIcLT29n42-EUYXnR6LEo9oNAnAOoPQLDHjG78I8s6P2t34U1kI-vEOivFnWaMVc5G~DFmC~anTjzPZGt0VXoj5~EI944fLHQ6ZloVgEj0Ouru7GKUqBndlOIwtb0mC7NMO0Qtn4pJ4xbq6Xg__"
+      alt="logo "
+    />
+  </div>
+  <nav id="nav-links">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div></div>
+  <span class="header-moving-span"></span>
+  <span class="header-icons-card" id="hamburger-icon">
+    <i class="fa-duotone fa-solid fa-bars"></i>
+  </span>
+  <span class="header-icons-card" id="cross-icon" style="display: none">
+    <i class="fa-solid fa-times"></i>
+  </span>
+</header>
 
-{% endblock %}
+<section class="hero-section">
+    <div class="hero-first-card">
+      <span class="hero-first-curv-line">
+        <span class="hero-first-curv-inner-line"></span>
+      </span>
+      <div class="hero-first-inner-card">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/6a8e/fdba/7ce0ef1772d9a4fe16a7dd35fc81c183?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Mzlojyx50ijn~t7pEBcNRjI7cx148oBXI62tO0~pg-Wvl2Lc7SbKhb7J~u8N5K--TpCQ2rbJNMfuNGF~6JXEw~JshUKLN4vH8EGt32DxwK65hoGFM~1xaQoafRrdPlbCL3jUkg3zqZdCaZzhVtaG8plROlE9GHmloxaRT1XgXzSkFiE3jyZh~jASWkO5YoP53O1isHmkGuXCmTmT4ji5SikH2dcRgkpnaE15oPuEJ2dzkllOy5a~tY7TPelczW7e36auhXG1vzqhztYnGO5-Ppo8GWt4pdLArnk9SlvPOhqLehkHYUdTQVQtQlWfC4vklKFOdBKE0LU7ky9pLsFrmw__"
+          alt="hero-section-image"
+        />
+        <div class="hero-inner-card-text">
+          <span>Let's Talk</span>
+          <span>Businees</span>
+        </div>
+      </div>
+      <span class="hero-first-curv-line">
+        <span class="hero-second-curv-inner-line"></span>
+      </span>
+    </div>
+    <div class="hero-second-card">
+      <div class="hero-second-inner-card">
+        <span>We are one step solution to</span>
+        <h1>Trasform your</h1>
+        <h1><span>Vision</span> into <span>Reality</span></h1>
+        <!-- <span class="hero-second-inner-card-first-image"></span> -->
+        <span class="hero-second-inner-card-first-image">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/e314/e367/f7897fcf822536f97af85bfb35f5e5f5?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hW8T34N847SRe688zNYAjDZN-FTIoBPPPAzHnIemvwmbe5gYFu3-w1J-qRRHUqgZq1QbiSxm4z-lWolFSuYfNu5yMlhIrzU-gZc2s8nwMLaVjGq~x3bunJMp0Z-Fl1GXe217XWzHPR3-yq1BfvVBDLppM3plrVfQA~I9r4E6gllXJyNTF2tj6DgcPVJwGL4orrp9Y~KLOh2OMZ05~C9ei6pvwRxQVYG3Pi7fxhwdATHaeBcoVggvi5qHtazEvlKB2hMUFGXN4MRc4K59tiT8KpeQ7wwNaCkLLxsH-Hyj1h86vZzeiDbnygI0bvLnAArLqzSjQgSWMBKdY5tGpcvyZg__"
+            alt=""
+          />
+          <span></span>
+        </span>
+        <span class="hero-second-inner-card-second-image">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/727d/e769/f63eb1c01bb99fc8df77968ccf82de88?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kd313-AWBzLfYp597bMB4GYsoLVELGWH7JNeK~QajweVMLLD8cvoSkFi-Locua6VKHnX6LWqwtPdrcuJTzlUmaXeY2ReEz3WAIxFkGRbstzKPEqu4j5W8fr6ubH0hBSgjCeN-nd~MQcq-Q6AdvnonckOYJAawzBeiaY9kOr1ehpyFLtecreSzdbJNs3EygqlO-s64q--5KjNSYnm~ds8jAULw8jFWi-xcDwlgASmVfN7I36CtcZocWQ1I8S1lz5unwQDkKsjx64J9gFFCOtff61gpuJqF7Ya-uYNiBlfuwUmYFpm-qoEBBmS6UML1BUpEvi8m-b3z6Tl8-CBsdDf1A__"
+            alt=""
+          />
+          <span></span>
+        </span>
+        <div class="hero-second-card-image-container">
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/e314/e367/f7897fcf822536f97af85bfb35f5e5f5?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hW8T34N847SRe688zNYAjDZN-FTIoBPPPAzHnIemvwmbe5gYFu3-w1J-qRRHUqgZq1QbiSxm4z-lWolFSuYfNu5yMlhIrzU-gZc2s8nwMLaVjGq~x3bunJMp0Z-Fl1GXe217XWzHPR3-yq1BfvVBDLppM3plrVfQA~I9r4E6gllXJyNTF2tj6DgcPVJwGL4orrp9Y~KLOh2OMZ05~C9ei6pvwRxQVYG3Pi7fxhwdATHaeBcoVggvi5qHtazEvlKB2hMUFGXN4MRc4K59tiT8KpeQ7wwNaCkLLxsH-Hyj1h86vZzeiDbnygI0bvLnAArLqzSjQgSWMBKdY5tGpcvyZg__"
+              alt=""
+            />
+            <span></span>
+          </span>
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/727d/e769/f63eb1c01bb99fc8df77968ccf82de88?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kd313-AWBzLfYp597bMB4GYsoLVELGWH7JNeK~QajweVMLLD8cvoSkFi-Locua6VKHnX6LWqwtPdrcuJTzlUmaXeY2ReEz3WAIxFkGRbstzKPEqu4j5W8fr6ubH0hBSgjCeN-nd~MQcq-Q6AdvnonckOYJAawzBeiaY9kOr1ehpyFLtecreSzdbJNs3EygqlO-s64q--5KjNSYnm~ds8jAULw8jFWi-xcDwlgASmVfN7I36CtcZocWQ1I8S1lz5unwQDkKsjx64J9gFFCOtff61gpuJqF7Ya-uYNiBlfuwUmYFpm-qoEBBmS6UML1BUpEvi8m-b3z6Tl8-CBsdDf1A__"
+              alt=""
+            />
+            <span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-third-card">
+    <div class="home-third-inner-card">
+      <div class="home-third-first-inner-card"></div>
+      <div class="home-third-second-inner-card">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/e9da/58fb/46819265fd7edb48af453bc3c8c30a08?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FHcCBLW6v-BfiBX54WJxSAKxLulHTotbwz2dXLU1VG28ljs0qejtS1Xz-XVtdyeI2Bldy065wdUqkFXsQzEuY45SNd~KdUC8o8~-KyRjWZ4azMj4C1egwdrB6~QIs-deQnlOWwMQ0hYc5VvDLATHffmS1aFDVbScpL1Dd9~TsmMMtP8T19hgL6xzGQCPUkDH-ASSphhGUnV3pH6bLEQSs-vESRr2XxAJBbBHH88sJ5F18ZKFef679uEsP7p8nnp-4TS9tV4zHhA8i2F36BrCfKMi2mryv4~vgmuZMM90KkhgNNVBSrAb5fAQNcnU1yntc~wJQwd-FDosw~nJP5qBww__"
+          alt=""
+        />
+      </div>
+    </div>
+  </section>
+
+  {% endblock %}
